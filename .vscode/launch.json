@@ -1,0 +1,39 @@
+]{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Your Script",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/your_script.py",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "python": "${command:python.interpreterPath}",
+            "debugOptions": [
+                "RedirectOutput"
+            ],
+            "externalConsole": false,
+            "stopOnEntry": false,
+            "preLaunchTask": null,
+            "postDebugTask": null,
+            "showReturnValue": true,
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ],
+            "sourceMapPathOverrides": {
+                "type": "python",
+                "/mnt/c/": "/c/"
+            },
+            "runtimeArgs": ["--remote-debugging-port=9222"],
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:5000", // Optional: Change the URL as needed
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
